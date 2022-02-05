@@ -14,7 +14,7 @@ class LoginDataSource{
 
     private lateinit var databaseHelper: DatabaseHelper
 
-    fun login(username: String, password: String, context: Context): Result<LoggedInUser> {
+    fun login(username: String, password: String): Result<LoggedInUser> {
         try {
 
             Log.d("yamid", "user: $username password: $password")
